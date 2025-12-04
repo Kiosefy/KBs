@@ -33,7 +33,7 @@ function carregarBaseDeDados() {
         const endTime = performance.now();
         const tempoGasto = (endTime - startTime).toFixed(2);
         
-        statusCarregamento.textContent = ` Base de Dados Carregada com ${TAMANHO_BASE} registros em ${tempoGasto} ms.`;
+        statusCarregamento.textContent = ` Base de Dados Carregada em ${tempoGasto} ms.`;
         btnBuscar.disabled = false;
         document.getElementById('btnCarregar').disabled = true;
     }, 10);
@@ -126,3 +126,4 @@ function executarBuscasAleatorias() {
     targetInfo.innerHTML = ` ID de Busca Aleatório: **${idAlvo}**`;
     resultFound.textContent = `Resultado encontrado: ID ${resultado.id}, Nome: ${resultado.nome}`;
 }
+
