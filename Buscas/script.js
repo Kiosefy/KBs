@@ -1,4 +1,4 @@
-const TAMANHO_BASE = 50000;
+const TAMANHO_BASE = 5000;
 const NUM_BUSCAS_TESTE = 100; // Repetir para calcular a média
 let baseDadosLista = []; // Para busca Sequencial e Indexada
 let baseDadosHashMap = new Map(); // Para busca por HashMap
@@ -125,4 +125,5 @@ function executarBuscasAleatorias() {
     
     targetInfo.innerHTML = `🎯 ID de Busca Aleatório: **${idAlvo}**`;
     resultFound.textContent = `Resultado encontrado: ID ${resultado.id}, Nome: ${resultado.nome}`;
+
 }
