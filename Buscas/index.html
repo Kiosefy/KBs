@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativo de Algoritmos de Busca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Comparativo de Desempenho de Buscas</h1>
+        <p>Demonstração das buscas **Sequencial**, **Indexada (Binária)** e **HashMap** em uma base de 50.000 registros, medindo o tempo de resposta em nanosegundos.</p>
+        
+        <div class="controls">
+            <button id="btnCarregar" onclick="carregarBaseDeDados()">1. Carregar Base de Dados (50.000 Registros)</button>
+            <p id="statusCarregamento"></p>
+        </div>
+
+        <div class="search-area">
+            <h2>2. Realizar Busca Aleatória</h2>
+            <p>Clique para escolher um ID de usuário aleatório e executar os três tipos de busca para comparação.</p>
+            
+            <button id="btnBuscar" onclick="executarBuscasAleatorias()" disabled>Executar 3 Tipos de Busca</button>
+            <p class="target-info" id="targetInfo"></p>
+
+            <div class="results-container">
+                <h3>Tempo de Resposta Médio (ns)</h3>
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>Tipo de Busca</th>
+                            <th>Tempo Médio (ns)</th>
+                            <th>Complexidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="rowSequencial">
+                            <td>Sequencial</td>
+                            <td class="tempo">-</td>
+                            <td>O(n)</td>
+                        </tr>
+                        <tr id="rowIndexada">
+                            <td>Indexada (Binária)</td>
+                            <td class="tempo">-</td>
+                            <td>O(log n)</td>
+                        </tr>
+                        <tr id="rowHashMap">
+                            <td>HashMap</td>
+                            <td class="tempo">-</td>
+                            <td>O(1)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <p id="resultFound"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
