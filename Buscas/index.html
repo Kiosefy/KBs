@@ -11,16 +11,15 @@
         <h1>🔍 Comparativo de Desempenho de Buscas</h1>
         <p>Demonstração das buscas <b>Sequencial, Indexada (Binária) e HashMap</b> em uma base de 5.000 registros, medindo o tempo de resposta em nanosegundos.</p>
         
-        <div class="controls">
-            <button id="btnCarregar" onclick="carregarBaseDeDados()">1. Carregar Base de Dados (5.000 Registros)</button>
+        <div class="controls" id="alinha">
+            <button id="btnCarregar" onclick="carregarBaseDeDados()">Carregar Base de Dados (5.000 Registros)</button>
             <p id="statusCarregamento"></p>
         </div>
 
-        <div class="search-area">
-            <h2>2. Realizar Busca Aleatória</h2>
-            <p>Clique para escolher um ID de usuário aleatório e executar os três tipos de busca para comparação.</p>
+        <div class="search-area" id="alinha">
+            <h2>Realizar Busca Aleatória</h2>
             
-            <button id="btnBuscar" onclick="executarBuscasAleatorias()" disabled>Executar 3 Tipos de Busca</button>
+            <button id="btnBuscar" onclick="executarBuscasAleatorias()" disabled>Executar as buscas e comparar</button>
             <p class="target-info" id="targetInfo"></p>
 
             <div class="results-container">
@@ -30,24 +29,24 @@
                         <tr>
                             <th>Tipo de Busca</th>
                             <th>Tempo Médio (ns)</th>
-                            <th>Complexidade</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
                         <tr id="rowSequencial">
                             <td>Sequencial</td>
                             <td class="tempo">-</td>
-                            <td>O(n)</td>
+                            
                         </tr>
                         <tr id="rowIndexada">
                             <td>Indexada (Binária)</td>
                             <td class="tempo">-</td>
-                            <td>O(log n)</td>
+                            
                         </tr>
                         <tr id="rowHashMap">
                             <td>HashMap</td>
                             <td class="tempo">-</td>
-                            <td>O(1)</td>
+                            
                         </tr>
                     </tbody>
                 </table>
@@ -59,5 +58,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
