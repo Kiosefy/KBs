@@ -88,13 +88,13 @@ button:disabled {
 /* Destaque para o tempo do HashMap (o mais rápido) */
 #rowHashMap .tempo {
     font-weight: bold;
-    color: #27ae60;
+    color: #01cc1c;
 }
 
 /* Destaque para o tempo Sequencial (o mais lento) */
 #rowSequencial .tempo {
     font-weight: bold;
-    color: #c0392b;
+    color: #db1616;
 }
 
 #resultFound {
