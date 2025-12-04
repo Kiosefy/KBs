@@ -12,7 +12,7 @@ const resultFound = document.getElementById('resultFound');
 function carregarBaseDeDados() {
     baseDadosLista = [];
     baseDadosHashMap = new Map();
-    statusCarregamento.textContent = "⚙️ Carregando... por favor, aguarde...";
+    statusCarregamento.textContent = " Carregando... por favor, aguarde...";
     
     // Usamos setTimeout para não travar a interface enquanto a base é criada
     setTimeout(() => {
@@ -33,7 +33,7 @@ function carregarBaseDeDados() {
         const endTime = performance.now();
         const tempoGasto = (endTime - startTime).toFixed(2);
         
-        statusCarregamento.textContent = `✅ Base de Dados Carregada com ${TAMANHO_BASE} registros em ${tempoGasto} ms.`;
+        statusCarregamento.textContent = ` Base de Dados Carregada com ${TAMANHO_BASE} registros em ${tempoGasto} ms.`;
         btnBuscar.disabled = false;
         document.getElementById('btnCarregar').disabled = true;
     }, 10);
@@ -123,7 +123,6 @@ function executarBuscasAleatorias() {
     document.querySelector('#rowIndexada .tempo').textContent = `${tempoMedioBinaria} ns`;
     document.querySelector('#rowHashMap .tempo').textContent = `${tempoMedioHashMap} ns`;
     
-    targetInfo.innerHTML = `🎯 ID de Busca Aleatório: **${idAlvo}**`;
+    targetInfo.innerHTML = ` ID de Busca Aleatório: **${idAlvo}**`;
     resultFound.textContent = `Resultado encontrado: ID ${resultado.id}, Nome: ${resultado.nome}`;
-
 }
