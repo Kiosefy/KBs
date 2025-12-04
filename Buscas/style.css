@@ -1,14 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: tahoma, Arial, sans-serif;
     background-color: #f4f7f9;
-    color: #333;
+    color: #fff;
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 
 .container {
-    background-color: #fff;
+    background-color: #269ca0;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-    color: #2c3e50;
+    color: #fff;
     text-align: center;
     margin-bottom: 5px;
 }
@@ -42,7 +42,7 @@ button {
 }
 
 button:hover:not(:disabled) {
-    background-color: #2980b9;
+    background-color: #095c5f;
 }
 
 button:disabled {
@@ -53,13 +53,13 @@ button:disabled {
 #statusCarregamento {
     margin-top: 10px;
     font-weight: bold;
-    color: #27ae60;
+    color: #33d5db;
 }
 
 .target-info {
     font-size: 1.1em;
     font-weight: bold;
-    color: #e67e22;
+    color: #33d5db;
     margin-top: 15px;
 }
 
@@ -81,8 +81,8 @@ button:disabled {
 }
 
 #resultsTable th {
-    background-color: #f0f4f7;
-    color: #333;
+    background-color: #33d5db;
+    color: #fff;
 }
 
 /* Destaque para o tempo do HashMap (o mais rápido) */
@@ -98,9 +98,13 @@ button:disabled {
 }
 
 #resultFound {
+    color: #000;
     margin-top: 20px;
     padding: 10px;
     background-color: #ecf0f1;
     border-left: 5px solid #33d5db;
+}
 
+#alinha {
+    text-align: center;
 }
